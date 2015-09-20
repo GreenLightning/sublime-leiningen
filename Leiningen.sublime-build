@@ -1,0 +1,66 @@
+{
+	"selector": "source.clojure",
+	"working_dir": "$project_path",
+	"cmd": ["lein", "compile", ":all"],
+	"windows": {
+		"cmd": ["lein.bat", "compile", ":all"]
+	},
+	"variants": [
+		{
+			"name": "Documentation",
+			"cmd": ["lein", "marg", "-m", "-d", "docs"],
+			"windows": {
+				"cmd": ["lein.bat", "marg", "-m", "-d", "docs"]
+			}
+		},
+		{
+			"name": "Clean",
+			"cmd": ["lein", "clean"],
+			"windows": {
+				"cmd": ["lein.bat", "clean"]
+			}
+		},
+		{
+			"name": "Run",
+			"cmd": ["lein", "run"],
+			"windows": {
+				"cmd": ["lein.bat", "run"]
+			}
+		},
+		{
+			"name": "Test",
+			"cmd": ["lein", "test"],
+			"windows": {
+				"cmd": ["lein.bat", "test"]
+			}
+		},
+		{
+			"name": "Re-test",
+			"cmd": ["lein", "retest"],
+			"windows": {
+				"cmd": ["lein.bat", "retest"]
+			}
+		},
+		{
+			"name": "Uberjar",
+			"cmd": ["lein", "uberjar"],
+			"windows": {
+				"cmd": ["lein.bat", "uberjar"]
+			}
+		},
+		{
+			"name": "Jar",
+			"cmd": ["lein", "jar"],
+			"windows": {
+				"cmd": ["lein.bat", "jar"]
+			}
+		},
+		{
+			"name": "Check",
+			"cmd": ["lein", "check"],
+			"windows": {
+				"cmd": ["lein.bat", "check"]
+			}
+		}
+	]
+}
